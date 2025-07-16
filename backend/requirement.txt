@@ -1,0 +1,46 @@
+fastapi
+uvicorn
+langchain
+faiss-cpu
+ollama
+PyMuPDF
+pydantic
+python-multipart
+npm init -y
+npm install concurrently
+✅ Step 1: Install concurrently in the root folder
+Go to your root folder llama-rag-chatbot, then run:
+npm init -y
+npm install concurrently
+This sets up package.json in your root project and installs concurrently to run multiple commands in parallel.
+
+✅ Step 2: Add the unified start script
+In the generated package.json in the root (llama-rag-chatbot/package.json), add this:
+
+json
+Copy
+Edit
+"scripts": {
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd backend && venv\\Scripts\\activate && uvicorn main:app --reload",
+  "client": "cd frontend && npm start"
+}
+If you are on Linux/Mac, replace the activate line:
+
+json
+Copy
+Edit
+"server": "cd backend && source venv/bin/activate && uvicorn main:app --reload"
+✅ Step 3: Run both frontend and backend with one command
+From the root (llama-rag-chatbot):
+
+bash
+Copy
+Edit
+npm start
+🎉 This will:
+
+Activate your Python backend (FastAPI)
+
+Start the React frontend
+
