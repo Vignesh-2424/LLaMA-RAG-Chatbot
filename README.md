@@ -63,18 +63,49 @@ npm install concurrently
 ## 📁 Project Structure
 
 ```
+## 📁 Project Structure
+
+```
 llama-rag-chatbot/
 ├── backend/
-│   ├── main.py
+│   ├── __pycache__/
+│   ├── venv/
+│   │   └── (virtual environment files)
 │   ├── document_handler.py
-│   └── ...
+│   ├── llama_chain.py
+│   ├── main.py
+│   └── requirement.txt
+│
 ├── frontend/
-│   ├── src/
+│   ├── node_modules/
 │   ├── public/
-│   └── ...
-├── vector_store/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Chat.js
+│   │   │   ├── chat.css
+│   │   │   ├── Upload.js
+│   │   │   └── upload.css
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
+│
+├── screenshots/
+│   └── (images used for demo)
+├── .gitignore
+├── README.md
 ├── package.json
-└── README.md
+└── package-lock.json
+```
+
+
 ```
 
 ---
