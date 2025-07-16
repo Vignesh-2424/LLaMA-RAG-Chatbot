@@ -35,23 +35,19 @@ Built using **FastAPI** (backend) and **React** (frontend), integrated with **Ol
 
 ## 📦 Requirements
 
-### ✅ Backend (Python)
-
-Install in a virtual environment:
+**Backend (Python)**
 
 ```bash
 pip install fastapi uvicorn langchain faiss-cpu ollama PyMuPDF pydantic python-multipart
 ```
 
-### ✅ Frontend (Node)
+**Frontend (Node)**
 
 ```bash
 npm install
 ```
 
-### ✅ Multi-process runner
-
-From the project root:
+**Multi-process runner**
 
 ```bash
 npm init -y
@@ -60,9 +56,6 @@ npm install concurrently
 
 ---
 
-## 📁 Project Structure
-
-```
 ## 📁 Project Structure
 
 ```
@@ -105,12 +98,9 @@ llama-rag-chatbot/
 └── package-lock.json
 ```
 
-
-```
-
 ---
 
-## 🔧 Scripts (`package.json`)
+## 🔧 Scripts (package.json)
 
 ```json
 "scripts": {
@@ -121,6 +111,7 @@ llama-rag-chatbot/
 ```
 
 > 💡 On Linux/Mac:
+
 ```json
 "server": "cd backend && source venv/bin/activate && uvicorn main:app --reload"
 ```
@@ -145,12 +136,10 @@ This will:
 
 ## 📸 Demo
 
-> Add your screenshots in a `screenshots/` folder if you'd like.
-
-Example:
-
 ![Upload Demo](./screenshots/upload.png)  
 ![Chat Demo](./screenshots/chat.png)
+
+> Add your screenshots in a `screenshots/` folder if you'd like
 
 ---
 
@@ -163,3 +152,4 @@ MIT – Use freely, but attribution appreciated.
 ## 🙋‍♂️ Author
 
 Made with ❤️ by **Vignesh R.S**
+
